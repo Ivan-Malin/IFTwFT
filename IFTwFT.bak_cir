@@ -4,11 +4,11 @@ Version=12.00
 Program=Micro-Cap
 Component Version=10.00
 Shape Version=11.00
-Screen=1333,889
+Screen=1680,1050
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=131
-TXCnt=17
+NLCnt=123
+TXCnt=21
 
 [shapedef]
 Name=Battery
@@ -48,36 +48,6 @@ Line=0,0,12,0
 Line=12,-8,12,8
 Line=18,-4,18,4
 Line=24,0,24,0
-
-[shapedef]
-Name=Inductor
-Line=42,0,48,0
-Line=0,0,5,0
-Arc=5,-7,17,7 , 11,-7,5,0
-Arc=13,-7,25,7 , 19,-7,13,0
-Arc=29,-7,41,7 , 35,-7,29,0
-Arc=21,-7,33,7 , 27,-7,21,0
-Arc=6,-7,18,7 , 18,0,12,-7
-Arc=14,-7,26,7 , 26,0,20,-7
-Arc=22,-7,34,7 , 34,0,28,-7
-Arc=30,-7,42,7 , 42,0,36,-7
-Line=11,-7,12,-7
-Line=19,-7,20,-7
-Line=27,-7,28,-7
-Line=35,-7,36,-7
-Arc=13,-4,17,2 , 13,-1,15,2
-Arc=29,-4,33,2 , 29,-1,31,2
-Arc=21,-4,25,2 , 21,-1,23,2
-Arc=14,-4,18,2 , 16,2,18,-1
-Arc=30,-4,34,2 , 32,2,34,-1
-Arc=22,-4,26,2 , 24,2,26,-1
-Line=15,2,16,2
-Line=23,2,24,2
-Line=31,2,32,2
-Line=5,5,9,5
-Line=41,5,41,9
-Line=39,7,43,7
-Current=32,8,16,8
 
 [shapedef]
 Name=Minus.root
@@ -183,8 +153,8 @@ Current=32,16,16,16
 Name=Resistor
 Definition=Resistor
 Shape=Resistor
-Mask=6913
-Used=195
+Mask=6401
+Used=354
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -195,8 +165,8 @@ Pin="Minus",0,0,-14,-4
 Name=Ground
 Definition=Ground
 Shape=Ground
-Mask=1793
-Used=306
+Mask=257
+Used=412
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -207,7 +177,7 @@ Name=BC846BPN_PNP
 Definition=Subckt
 Shape=PNP
 Mask=4224
-Used=5
+Used=2
 memo=PNP General Purpose Transistor Vceo=-65V Ic=-100mA
 Link=http://www.nxp.com/documents/data_sheet/BC846BPN.pdf
 Label Offset=29,-14,-6,25
@@ -220,8 +190,8 @@ Pin="1",a,3,3,5,6
 Name=Voltage Source
 Definition=VSpice
 Shape=SPICE_V
-Mask=4097
-Used=68
+Mask=5377
+Used=77
 memo=Voltage Source
 Label Offset=19,13,15,13
 PinCnt=2
@@ -233,7 +203,7 @@ Name=DClock
 Definition=Macro
 Shape=StimClock
 Mask=4096
-Used=9
+Used=10
 memo=Digital Clock Stimulus Macro
 Link=http://www.spectrum-soft.com/news/fall2003/dclock.shtm
 Label Offset=29,10,12,21
@@ -241,35 +211,11 @@ PinCnt=1
 Pin="Out",d,9,0
 
 [compdef]
-Name=Capacitor
-Definition=Capacitor
-Shape=Capacitor
-Mask=7425
-Used=38
-memo=Capacitor
-Label Offset=16,12,12,12
-PinCnt=2
-Pin="Plus",6,0,-3,-5
-Pin="Minus",0,0,-14,-5
-
-[compdef]
-Name=Inductor
-Definition=Inductor
-Shape=Inductor
-Mask=7681
-Used=45
-memo=Inductor
-Label Offset=18,9,11,12
-PinCnt=2
-Pin="Plus",6,0,-5,-9
-Pin="Minus",0,0,-3,-9
-
-[compdef]
 Name=Battery
 Definition=Battery
 Shape=Battery
 Mask=7937
-Used=51
+Used=100
 memo=Battery
 Label Offset=19,7,10,13
 PinCnt=2
@@ -281,7 +227,7 @@ Name=Opamp
 Definition=Opamp
 Shape=Opamp5
 Mask=5121
-Used=8
+Used=18
 memo=Opamp
 Label Offset=44,29,-14,39
 PinCnt=5
@@ -290,6 +236,18 @@ Pin="Minus input",0,6,-33,20
 Pin="VEE",4,7,3,-5
 Pin="Output",9,3,-13,-4
 Pin="VCC",4,-1,5,14
+
+[compdef]
+Name=Capacitor
+Definition=Capacitor
+Shape=Capacitor
+Mask=6401
+Used=56
+memo=Capacitor
+Label Offset=16,12,12,12
+PinCnt=2
+Pin="Plus",6,0,-3,-5
+Pin="Minus",0,0,-14,-5
 
 [Circuit]
 Window Placement=2,3, -1,-1, -8,-31, 26,26,978,372
@@ -321,7 +279,7 @@ Show Grid Text=True
 
 [Comp]
 Name=Resistor
-Px=432,288
+Px=432,336
 Rot=3
 
 [Attr]
@@ -340,7 +298,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=432,192
+Px=432,240
 Rot=3
 
 [Attr]
@@ -359,7 +317,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=360,264
+Px=360,312
 Rot=3
 
 [Attr]
@@ -377,24 +335,24 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=288,216,320,216
+Pxs=288,264,320,264
 
 [Wire]
-Pxs=360,216,408,216
+Pxs=360,264,408,264
 
 [Comp]
 Name=Ground
-Px=288,264
+Px=288,312
 Rot=7
 
 [Comp]
 Name=Ground
-Px=432,144
+Px=432,192
 Rot=5
 
 [Comp]
 Name=Resistor
-Px=360,216
+Px=360,264
 Rot=3
 
 [Attr]
@@ -412,14 +370,14 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=360,144,432,144
+Pxs=360,192,432,192
 
 [Wire]
-Pxs=360,144,360,168
+Pxs=360,192,360,216
 
 [Comp]
 Name=BC846BPN_PNP
-Px=408,216
+Px=408,264
 Rot=4
 
 [Attr]
@@ -437,7 +395,7 @@ V
 
 [Comp]
 Name=Voltage Source
-Px=336,288
+Px=336,336
 
 [Attr]
 ON=-31,-27,PART
@@ -446,7 +404,7 @@ Style=8192
 
 [Attr]
 ON=-94,-41,VALUE
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 
 [Attr]
 ON=0,0,PACKAGE
@@ -479,23 +437,23 @@ Style=256
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 Style=256
 
 [Wire]
-Pxs=336,264,360,264
+Pxs=336,312,360,312
 
 [Wire]
-Pxs=336,264,336,288
+Pxs=336,312,336,336
 
 [Comp]
 Name=Ground
-Px=336,288
+Px=336,336
 Rot=7
 
 [Comp]
 Name=Resistor
-Px=432,488
+Px=432,536
 Rot=3
 
 [Attr]
@@ -514,7 +472,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=432,392
+Px=432,440
 Rot=3
 
 [Attr]
@@ -533,7 +491,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=360,464
+Px=360,512
 Rot=3
 
 [Attr]
@@ -551,24 +509,24 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=288,416,360,416
+Pxs=288,464,360,464
 
 [Wire]
-Pxs=360,416,408,416
+Pxs=360,464,408,464
 
 [Comp]
 Name=Ground
-Px=288,464
+Px=288,512
 Rot=7
 
 [Comp]
 Name=Ground
-Px=432,344
+Px=432,392
 Rot=5
 
 [Comp]
 Name=Resistor
-Px=360,416
+Px=360,464
 Rot=3
 
 [Attr]
@@ -586,14 +544,14 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=360,344,432,344
+Pxs=360,392,432,392
 
 [Wire]
-Pxs=360,344,360,368
+Pxs=360,392,360,416
 
 [Comp]
 Name=BC846BPN_PNP
-Px=408,416
+Px=408,464
 Rot=4
 
 [Attr]
@@ -611,7 +569,7 @@ V
 
 [Comp]
 Name=Voltage Source
-Px=336,488
+Px=336,536
 
 [Attr]
 ON=-31,-27,PART
@@ -620,7 +578,7 @@ Style=8192
 
 [Attr]
 ON=-94,-41,VALUE
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 
 [Attr]
 ON=0,0,PACKAGE
@@ -653,23 +611,23 @@ Style=256
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 Style=256
 
 [Wire]
-Pxs=336,464,360,464
+Pxs=336,512,360,512
 
 [Wire]
-Pxs=336,464,336,488
+Pxs=336,512,336,536
 
 [Comp]
 Name=Ground
-Px=336,488
+Px=336,536
 Rot=7
 
 [Comp]
 Name=Voltage Source
-Px=384,288
+Px=384,336
 
 [Attr]
 ON=19,13,PART
@@ -686,7 +644,7 @@ V
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 Style=256
 
 [Attr]
@@ -696,7 +654,7 @@ Style=256
 
 [Comp]
 Name=Voltage Source
-Px=384,488
+Px=384,536
 
 [Attr]
 ON=19,13,PART
@@ -713,7 +671,7 @@ V
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 Style=256
 
 [Attr]
@@ -722,14 +680,14 @@ V=DC 0 AC 1 0 Sin 0 5 2meg 0 0 0
 Style=256
 
 [Wire]
-Pxs=432,192,616,192
+Pxs=432,240,616,240
 
 [Wire]
-Pxs=432,392,624,392
+Pxs=432,440,624,440
 
 [Comp]
 Name=Resistor
-Px=432,688
+Px=432,736
 Rot=3
 
 [Attr]
@@ -748,7 +706,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=432,592
+Px=432,640
 Rot=3
 
 [Attr]
@@ -767,7 +725,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=360,664
+Px=360,712
 Rot=3
 
 [Attr]
@@ -785,24 +743,24 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=288,616,360,616
+Pxs=288,664,360,664
 
 [Wire]
-Pxs=360,616,408,616
+Pxs=360,664,408,664
 
 [Comp]
 Name=Ground
-Px=288,664
+Px=288,712
 Rot=7
 
 [Comp]
 Name=Ground
-Px=432,544
+Px=432,592
 Rot=5
 
 [Comp]
 Name=Resistor
-Px=360,616
+Px=360,664
 Rot=3
 
 [Attr]
@@ -820,14 +778,14 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=360,544,432,544
+Pxs=360,592,432,592
 
 [Wire]
-Pxs=360,544,360,568
+Pxs=360,592,360,616
 
 [Comp]
 Name=BC846BPN_PNP
-Px=408,616
+Px=408,664
 Rot=4
 
 [Attr]
@@ -845,7 +803,7 @@ V
 
 [Comp]
 Name=Voltage Source
-Px=336,688
+Px=336,736
 
 [Attr]
 ON=-31,-27,PART
@@ -854,7 +812,7 @@ Style=8192
 
 [Attr]
 ON=-94,-41,VALUE
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 
 [Attr]
 ON=0,0,PACKAGE
@@ -887,23 +845,23 @@ Style=256
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 Style=256
 
 [Wire]
-Pxs=336,664,360,664
+Pxs=336,712,360,712
 
 [Wire]
-Pxs=336,664,336,688
+Pxs=336,712,336,736
 
 [Comp]
 Name=Ground
-Px=336,688
+Px=336,736
 Rot=7
 
 [Comp]
 Name=Voltage Source
-Px=384,688
+Px=384,736
 
 [Attr]
 ON=19,13,PART
@@ -920,7 +878,7 @@ V
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 Style=256
 
 [Attr]
@@ -929,11 +887,11 @@ V=DC 0 AC 1 0 Sin 0 5 3meg 0 0 0
 Style=256
 
 [Wire]
-Pxs=432,592,632,592
+Pxs=432,640,632,640
 
 [Comp]
 Name=Resistor
-Px=432,888
+Px=432,936
 Rot=3
 
 [Attr]
@@ -952,7 +910,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=432,792
+Px=432,840
 Rot=3
 
 [Attr]
@@ -971,7 +929,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=360,864
+Px=360,912
 Rot=3
 
 [Attr]
@@ -989,24 +947,24 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=288,816,360,816
+Pxs=288,864,360,864
 
 [Wire]
-Pxs=360,816,408,816
+Pxs=360,864,408,864
 
 [Comp]
 Name=Ground
-Px=288,864
+Px=288,912
 Rot=7
 
 [Comp]
 Name=Ground
-Px=432,744
+Px=432,792
 Rot=5
 
 [Comp]
 Name=Resistor
-Px=360,816
+Px=360,864
 Rot=3
 
 [Attr]
@@ -1024,14 +982,14 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=360,744,432,744
+Pxs=360,792,432,792
 
 [Wire]
-Pxs=360,744,360,768
+Pxs=360,792,360,816
 
 [Comp]
 Name=BC846BPN_PNP
-Px=408,816
+Px=408,864
 Rot=4
 
 [Attr]
@@ -1049,7 +1007,7 @@ V
 
 [Comp]
 Name=Voltage Source
-Px=336,888
+Px=336,936
 
 [Attr]
 ON=-31,-27,PART
@@ -1058,7 +1016,7 @@ Style=8192
 
 [Attr]
 ON=-94,-41,VALUE
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 
 [Attr]
 ON=0,0,PACKAGE
@@ -1091,23 +1049,23 @@ Style=256
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 Style=256
 
 [Wire]
-Pxs=336,864,360,864
+Pxs=336,912,360,912
 
 [Wire]
-Pxs=336,864,336,888
+Pxs=336,912,336,936
 
 [Comp]
 Name=Ground
-Px=336,888
+Px=336,936
 Rot=7
 
 [Comp]
 Name=Voltage Source
-Px=384,888
+Px=384,936
 
 [Attr]
 ON=19,13,PART
@@ -1124,7 +1082,7 @@ V
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 10 AC 1 0 
+V=DC 10 AC 1 0
 Style=256
 
 [Attr]
@@ -1133,11 +1091,11 @@ V=DC 0 AC 1 0 Sin 0 5 4meg 0 0 0
 Style=256
 
 [Wire]
-Pxs=432,792,640,792
+Pxs=432,840,640,840
 
 [Comp]
 Name=DClock
-Px=216,216
+Px=216,264
 
 [Attr]
 ON=29,10,PART
@@ -1162,7 +1120,7 @@ V
 
 [Comp]
 Name=DClock
-Px=216,416
+Px=216,464
 
 [Attr]
 ON=29,10,PART
@@ -1187,7 +1145,7 @@ V
 
 [Comp]
 Name=DClock
-Px=216,616
+Px=216,664
 
 [Attr]
 ON=29,10,PART
@@ -1212,7 +1170,7 @@ V
 
 [Comp]
 Name=DClock
-Px=216,816
+Px=216,864
 
 [Attr]
 ON=29,10,PART
@@ -1236,17 +1194,14 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=320,216,360,216
+Pxs=320,264,360,264
 
 [Wire]
-Pxs=1040,184,1216,184
-
-[Wire]
-Pxs=616,120,616,192
+Pxs=616,168,616,240
 
 [Comp]
 Name=Resistor
-Px=1040,184
+Px=1360,232
 Rot=2
 
 [Attr]
@@ -1256,212 +1211,12 @@ Style=8192
 
 [Attr]
 ON=-23,-39,RESISTANCE
-V=1k
+V=10k
 Style=8192
 
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=1152,288,1152,304
-
-[Wire]
-Pxs=1128,304,1152,304
-
-[Wire]
-Pxs=1152,304,1176,304
-
-[Wire]
-Pxs=1176,304,1176,312
-
-[Wire]
-Pxs=1128,304,1128,312
-
-[Comp]
-Name=Capacitor
-Px=1128,360
-Rot=5
-
-[Attr]
-ON=12,-26,PART
-V=C1
-Style=8192
-
-[Attr]
-ON=0,0,CAPACITANCE
-V=1p
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Inductor
-Px=1176,360
-Rot=5
-
-[Attr]
-ON=14,-22,PART
-V=L1
-Style=8192
-
-[Attr]
-ON=0,0,INDUCTANCE
-V=0.03184
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Wire]
-Pxs=1128,360,1152,360
-
-[Comp]
-Name=Ground
-Px=1152,360
-Rot=7
-
-[Wire]
-Pxs=1152,360,1176,360
-
-[Comp]
-Name=Resistor
-Px=1264,136
-Rot=2
-
-[Attr]
-ON=-32,-25,PART
-V=R18
-Style=8192
-
-[Attr]
-ON=-32,-39,RESISTANCE
-V=100
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Resistor
-Px=1312,136
-Rot=2
-
-[Attr]
-ON=-32,-25,PART
-V=R19
-Style=8192
-
-[Attr]
-ON=-32,-39,RESISTANCE
-V=R(R18)
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Capacitor
-Px=1216,240
-Rot=4
-
-[Attr]
-ON=12,-26,PART
-V=C2
-Style=8192
-
-[Attr]
-ON=12,-40,CAPACITANCE
-V=16u
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Capacitor
-Px=1264,240
-Rot=4
-
-[Attr]
-ON=12,-26,PART
-V=C3
-Style=8192
-
-[Attr]
-ON=12,-40,CAPACITANCE
-V=C(C2)
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Capacitor
-Px=1264,184
-Rot=5
-
-[Attr]
-ON=12,-26,PART
-V=C4
-Style=8192
-
-[Attr]
-ON=12,-40,CAPACITANCE
-V=2*C(C2)
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Ground
-Px=1264,184
-Rot=7
-
-[Comp]
-Name=Resistor
-Px=1264,288
-Rot=3
-
-[Attr]
-ON=11,-17,PART
-V=R20
-Style=8192
-
-[Attr]
-ON=11,-31,RESISTANCE
-V=R(R18)/2
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Ground
-Px=1264,288
-Rot=7
-
-[Wire]
-Pxs=1216,136,1216,184
-
-[Wire]
-Pxs=1312,136,1312,152
-
-[Wire]
-Pxs=1040,184,1040,288
-
-[Wire]
-Pxs=1216,184,1216,240
 
 [Comp]
 Name=Battery
@@ -1470,13 +1225,13 @@ Rot=3
 Page=3
 
 [Attr]
-ON=-26,-27,VALUE
-V=15
+ON=-34,-41,PART
+V=V15
 Style=8192
 
 [Attr]
-ON=-34,-41,PART
-V=V15
+ON=-26,-27,VALUE
+V=15
 Style=8192
 
 [Comp]
@@ -1492,13 +1247,13 @@ Rot=3
 Page=3
 
 [Attr]
-ON=-31,-27,VALUE
-V=-15
+ON=-34,-41,PART
+V=V16
 Style=8192
 
 [Attr]
-ON=-34,-41,PART
-V=V16
+ON=-31,-27,VALUE
+V=-15
 Style=8192
 
 [Comp]
@@ -1509,7 +1264,7 @@ Page=3
 
 [Comp]
 Name=Voltage Source
-Px=880,184
+Px=880,232
 
 [Attr]
 ON=-31,-27,PART
@@ -1518,7 +1273,7 @@ Style=8192
 
 [Attr]
 ON=-94,-41,VALUE
-V=DC 1.574 AC 1 0 
+V=DC 1.574 AC 1 0
 
 [Attr]
 ON=0,0,PACKAGE
@@ -1551,18 +1306,18 @@ Style=256
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 1.574 AC 1 0 
+V=DC 1.574 AC 1 0
 Style=256
 
 [Wire]
-Pxs=928,184,944,184
+Pxs=928,232,944,232
 
 [Wire]
-Pxs=944,184,992,184
+Pxs=944,232,1312,232
 
 [Comp]
 Name=Opamp
-Px=704,240
+Px=704,288
 Rot=4
 
 [Attr]
@@ -1580,12 +1335,12 @@ V
 
 [Comp]
 Name=Ground
-Px=704,240
+Px=704,288
 Rot=7
 
 [Comp]
 Name=Resistor
-Px=704,168
+Px=704,216
 Rot=2
 
 [Attr]
@@ -1603,14 +1358,14 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=704,168,704,192
+Pxs=704,216,704,240
 
 [Wire]
-Pxs=704,144,704,168
+Pxs=704,192,704,216
 
 [Comp]
 Name=Resistor
-Px=704,192
+Px=704,240
 Rot=2
 
 [Attr]
@@ -1629,7 +1384,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=704,144
+Px=704,192
 Rot=2
 
 [Attr]
@@ -1647,11 +1402,11 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=704,120,704,144
+Pxs=704,168,704,192
 
 [Comp]
 Name=Resistor
-Px=704,120
+Px=704,168
 Rot=2
 
 [Attr]
@@ -1669,29 +1424,29 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=616,120,656,120
+Pxs=616,168,656,168
 
 [Wire]
-Pxs=624,144,624,392
+Pxs=624,192,624,440
 
 [Wire]
-Pxs=624,144,656,144
+Pxs=624,192,656,192
 
 [Wire]
-Pxs=632,168,632,592
+Pxs=632,216,632,640
 
 [Wire]
-Pxs=632,168,656,168
+Pxs=632,216,656,216
 
 [Wire]
-Pxs=640,192,640,792
+Pxs=640,240,640,840
 
 [Wire]
-Pxs=640,192,656,192
+Pxs=640,240,656,240
 
 [Comp]
 Name=Resistor
-Px=752,120
+Px=752,168
 Rot=2
 
 [Attr]
@@ -1709,14 +1464,14 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=752,120,776,120
+Pxs=752,168,776,168
 
 [Wire]
-Pxs=776,120,776,216
+Pxs=776,168,776,264
 
 [Comp]
 Name=Opamp
-Px=808,208
+Px=808,256
 Rot=4
 
 [Attr]
@@ -1733,26 +1488,172 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=776,216,808,216
+Pxs=776,264,808,264
 
 [Wire]
-Pxs=808,208,808,216
+Pxs=808,256,808,264
 
 [Wire]
-Pxs=808,128,808,160
+Pxs=808,176,808,208
 
 [Wire]
-Pxs=808,128,880,128
+Pxs=808,176,880,176
 
 [Wire]
-Pxs=880,128,880,184
+Pxs=880,176,880,232
+
+[Comp]
+Name=Capacitor
+Px=1360,232
+Rot=1
+
+[Attr]
+ON=12,12,PART
+V=C1
+Style=8192
+
+[Attr]
+ON=0,0,CAPACITANCE
+V=1.6p
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Capacitor
+Px=1496,232
+
+[Attr]
+ON=18,-25,PART
+V=C2
+Style=8192
+
+[Attr]
+ON=0,0,CAPACITANCE
+V=160000p
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Ground
+Px=1360,280
+Rot=1
+
+[Comp]
+Name=Ground
+Px=1544,280
+Rot=1
+
+[Comp]
+Name=Resistor
+Px=1544,232
+Rot=1
+
+[Attr]
+ON=8,11,PART
+V=R26
+Style=8192
+
+[Attr]
+ON=8,25,RESISTANCE
+V=10k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
 
 [Wire]
-Pxs=1312,152,1312,240
+Pxs=1360,232,1368,232
+
+[Wire]
+Pxs=1368,232,1416,232
+
+[Wire]
+Pxs=1544,232,1592,232
+
+[Wire]
+Pxs=1592,232,1600,232
+
+[Comp]
+Name=Opamp
+Px=1416,224
+Rot=4
+
+[Attr]
+ON=44,-43,PART
+V=X11
+Style=8192
+
+[Attr]
+ON=44,-57,MODEL
+V=$GENERIC
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1416,224,1416,232
+
+[Wire]
+Pxs=1416,144,1416,176
+
+[Wire]
+Pxs=1416,144,1488,144
+
+[Wire]
+Pxs=1488,144,1488,200
+
+[Wire]
+Pxs=1488,200,1488,232
+
+[Wire]
+Pxs=1488,232,1496,232
+
+[Grid Text]
+Text="fh"
+Px=1544,232
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="fl"
+Px=1368,232
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ФНЧ"
+Text="K(w) = sqrt( 1/[1+(wRC)^2] )"
+Text="= sqrt( 1/[1+(w/wc)^2] ); wc=RC"
+Text=""
+Text="при w = wc"
+Text="K(w) = 1/sqrt(2)"
+Text=""
+Text="чтобы"
+Text="K(wc) = 0.9801 -> (wRC)^2 = 0.01 -> RC = 0.1/w"
+Text=""
+Text="R = 10k"
+Text="C = 1.6p"
+Px=896,168
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
 
 [Grid Text]
 Text="ff1"
-Px=1312,152
+Px=1592,232
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1760,7 +1661,7 @@ CBorder=None
 
 [Grid Text]
 Text="Q1"
-Px=320,216
+Px=320,264
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1768,7 +1669,7 @@ CBorder=None
 
 [Grid Text]
 Text="FG1"
-Px=944,184
+Px=944,232
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1776,7 +1677,7 @@ CBorder=None
 
 [Grid Text]
 Text="SIN"
-Px=432,288
+Px=432,336
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1784,7 +1685,7 @@ CBorder=None
 
 [Grid Text]
 Text="IN1"
-Px=288,216
+Px=288,264
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1792,7 +1693,7 @@ CBorder=None
 
 [Grid Text]
 Text="F1"
-Px=432,192
+Px=432,240
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1800,7 +1701,7 @@ CBorder=None
 
 [Grid Text]
 Text="SIN1"
-Px=432,488
+Px=432,536
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1808,7 +1709,7 @@ CBorder=None
 
 [Grid Text]
 Text="IN2"
-Px=288,416
+Px=288,464
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1816,7 +1717,7 @@ CBorder=None
 
 [Grid Text]
 Text="F2"
-Px=432,392
+Px=432,440
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1824,7 +1725,7 @@ CBorder=None
 
 [Grid Text]
 Text="SIN2"
-Px=432,688
+Px=432,736
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1832,7 +1733,7 @@ CBorder=None
 
 [Grid Text]
 Text="IN3"
-Px=288,616
+Px=288,664
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1840,7 +1741,7 @@ CBorder=None
 
 [Grid Text]
 Text="F3"
-Px=432,592
+Px=432,640
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1848,7 +1749,7 @@ CBorder=None
 
 [Grid Text]
 Text="SIN3"
-Px=432,888
+Px=432,936
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1856,7 +1757,7 @@ CBorder=None
 
 [Grid Text]
 Text="IN4"
-Px=288,816
+Px=288,864
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1864,7 +1765,7 @@ CBorder=None
 
 [Grid Text]
 Text="F4"
-Px=432,792
+Px=432,840
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1886,6 +1787,25 @@ GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
 Page=3
+CBorder=None
+
+[Grid Text]
+Text="ФВЧ"
+Text="K(w) = sqrt( 1/[1+(1/[wRC])^2] )"
+Text="= sqrt( 1/[1+(wc/w)^2] ); wc=RC"
+Text=""
+Text="при w = wc"
+Text="K(w) = 1/sqrt(2)"
+Text=""
+Text="чтобы"
+Text="K(wc) = 0.9801 -> (wRC)^2 = 100 -> RC = w*100"
+Text=""
+Text="R = 10k"
+Text="C = 160p"
+Px=1272,168
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
 CBorder=None
 
 [Schematic]
@@ -2062,7 +1982,7 @@ ALIGNBOTTOM=No
 
 [Section]
 Index=0
-Name="Миникурсач"
+Name="IFTwFT"
 Type=Main
 Enable=True
 CurrentPage 0=0
@@ -2084,9 +2004,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=200,86
+SB 3=431,0
 Scale 3=1
-Px=864,372
+Px=1499,229
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -2150,7 +2070,6 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
-SB 0=28,35
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -2353,7 +2272,7 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
-MonMaxShow=10
+MonMaxShow=12
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
@@ -2587,7 +2506,7 @@ NOFmtY=3E
 
 [WaveForm]
 Analysis=Transient
-Plt=1
+Plt=2
 AliasID=3
 XExp=T
 YExp=v(f2)
@@ -2612,7 +2531,7 @@ NOFmtY=3E
 
 [WaveForm]
 Analysis=Transient
-Plt=1
+Plt=2
 AliasID=4
 XExp=T
 YExp=v(in2)
@@ -2742,9 +2661,9 @@ AliasID=9
 XExp=T
 YExp=v(fg1)
 XRng=AutoAlways
-YRng=2,-0.5
+YRng=2.4,-0.6
 Options=LINEARX,LINEARY
-Range Grid Y=0.5
+Range Grid Y=0.6
 Enable=Enable
 Line Color=#FF00FF
 Text Color=#FF00FF
@@ -2767,12 +2686,62 @@ AliasID=10
 XExp=T
 YExp=v(ff1)
 XRng=AutoAlways
-YRng=-0.15,-0.225
+YRng=1,-0.25
 Options=LINEARX,LINEARY
-Range Grid Y=0.015
+Range Grid Y=0.25
 Enable=Enable
 Line Color=#000000
 Text Color=#000000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=5
+AliasID=11
+XExp=T
+YExp=v(fl)
+XRng=AutoAlways
+YRng=0.9,-0.6
+Options=LINEARX,LINEARY
+Range Grid Y=0.3
+Enable=Enable
+Line Color=#0000FF
+Text Color=#0000FF
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=6
+AliasID=12
+XExp=T
+YExp=v(fh)
+XRng=AutoAlways
+YRng=1,-0.25
+Options=LINEARX,LINEARY
+Range Grid Y=0.25
+Enable=Enable
+Line Color=#FF0000
+Text Color=#FF0000
 Rainbow=False
 VFmtX=3
 VFmtY=3
