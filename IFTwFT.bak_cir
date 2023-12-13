@@ -7,8 +7,8 @@ Shape Version=11.00
 Screen=1333,889
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=163
-TXCnt=22
+NLCnt=141
+TXCnt=19
 
 [shapedef]
 Name=Battery
@@ -184,7 +184,7 @@ Name=Resistor
 Definition=Resistor
 Shape=Resistor
 Mask=6913
-Used=210
+Used=215
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -196,7 +196,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-Used=322
+Used=323
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -233,7 +233,7 @@ Name=DClock
 Definition=Macro
 Shape=StimClock
 Mask=4096
-Used=9
+Used=10
 memo=Digital Clock Stimulus Macro
 Link=http://www.spectrum-soft.com/news/fall2003/dclock.shtm
 Label Offset=29,10,12,21
@@ -257,7 +257,7 @@ Name=Opamp
 Definition=Opamp
 Shape=Opamp5
 Mask=5121
-Used=21
+Used=22
 memo=Opamp
 Label Offset=44,29,-14,39
 PinCnt=5
@@ -272,7 +272,7 @@ Name=Capacitor
 Definition=Capacitor
 Shape=Capacitor
 Mask=7425
-Used=53
+Used=54
 memo=Capacitor
 Label Offset=16,12,12,12
 PinCnt=2
@@ -382,11 +382,6 @@ Pxs=288,264,320,264
 
 [Wire]
 Pxs=360,264,408,264
-
-[Comp]
-Name=Ground
-Px=288,312
-Rot=7
 
 [Comp]
 Name=Ground
@@ -556,11 +551,6 @@ Pxs=288,464,360,464
 
 [Wire]
 Pxs=360,464,408,464
-
-[Comp]
-Name=Ground
-Px=288,512
-Rot=7
 
 [Comp]
 Name=Ground
@@ -793,11 +783,6 @@ Pxs=360,664,408,664
 
 [Comp]
 Name=Ground
-Px=288,712
-Rot=7
-
-[Comp]
-Name=Ground
 Px=432,592
 Rot=5
 
@@ -933,210 +918,6 @@ Style=256
 Pxs=432,640,632,640
 
 [Comp]
-Name=Resistor
-Px=432,936
-Rot=3
-
-[Attr]
-ON=-24,-25,PART
-V=R13
-Style=8192
-
-[Attr]
-ON=-31,-39,RESISTANCE
-V=10k
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Resistor
-Px=432,840
-Rot=3
-
-[Attr]
-ON=-24,-25,PART
-V=R14
-Style=8192
-
-[Attr]
-ON=-31,-39,RESISTANCE
-V=5k
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Resistor
-Px=360,912
-Rot=3
-
-[Attr]
-ON=-24,-25,PART
-V=R15
-Style=8192
-
-[Attr]
-ON=-31,-39,RESISTANCE
-V=1k
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Wire]
-Pxs=288,864,360,864
-
-[Wire]
-Pxs=360,864,408,864
-
-[Comp]
-Name=Ground
-Px=288,912
-Rot=7
-
-[Comp]
-Name=Ground
-Px=432,792
-Rot=5
-
-[Comp]
-Name=Resistor
-Px=360,864
-Rot=3
-
-[Attr]
-ON=-24,-25,PART
-V=R16
-Style=8192
-
-[Attr]
-ON=-31,-39,RESISTANCE
-V=1k
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Wire]
-Pxs=360,792,432,792
-
-[Wire]
-Pxs=360,792,360,816
-
-[Comp]
-Name=BC846BPN_PNP
-Px=408,864
-Rot=4
-
-[Attr]
-ON=29,0,PART
-V=X4
-Style=8192
-
-[Attr]
-ON=29,0,NAME
-V=BC846BPN_PNP
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Voltage Source
-Px=336,936
-
-[Attr]
-ON=-31,-27,PART
-V=V13
-Style=8192
-
-[Attr]
-ON=-94,-41,VALUE
-V=DC 10 AC 1 0
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Attr]
-ON=0,0,FRACTION
-V=.2
-Style=256
-
-[Attr]
-ON=0,0,SMOOTHING
-V=N
-Style=256
-
-[Attr]
-ON=0,0,Saved_PulseS
-V=N
-Style=256
-
-[Attr]
-ON=0,0,Saved_PulseF
-V=.2
-Style=256
-
-[Attr]
-ON=0,0,Saved_Pulse
-V=DC 0 AC 1 0 Pulse 0 5 0 10n 10n 10u 20u
-Style=256
-
-[Attr]
-ON=0,0,Saved_None
-V=DC 10 AC 1 0
-Style=256
-
-[Wire]
-Pxs=336,912,360,912
-
-[Wire]
-Pxs=336,912,336,936
-
-[Comp]
-Name=Ground
-Px=336,936
-Rot=7
-
-[Comp]
-Name=Voltage Source
-Px=384,936
-
-[Attr]
-ON=19,13,PART
-V=V14
-Style=8192
-
-[Attr]
-ON=19,27,VALUE
-V=DC 0 AC 1 0 Sin 0 5 7meg 0 0 0
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Attr]
-ON=0,0,Saved_None
-V=DC 10 AC 1 0
-Style=256
-
-[Attr]
-ON=0,0,Saved_Sin
-V=DC 0 AC 1 0 Sin 0 5 7meg 0 0 0
-Style=256
-
-[Wire]
-Pxs=432,840,640,840
-
-[Comp]
 Name=DClock
 Px=216,264
 
@@ -1206,31 +987,6 @@ V=20u
 [Attr]
 ON=29,66,Param:ONEWIDTH
 V=20u
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=DClock
-Px=216,864
-
-[Attr]
-ON=29,10,PART
-V=X8
-Style=8192
-
-[Attr]
-ON=29,24,FILE
-V=DClock
-
-[Attr]
-ON=29,52,Param:ZEROWIDTH
-V=40u
-
-[Attr]
-ON=29,66,Param:ONEWIDTH
-V=40u
 
 [Attr]
 ON=0,0,PACKAGE
@@ -1461,9 +1217,6 @@ Pxs=632,216,632,640
 
 [Wire]
 Pxs=632,216,656,216
-
-[Wire]
-Pxs=640,240,640,840
 
 [Wire]
 Pxs=640,240,656,240
@@ -1981,30 +1734,6 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="SIN3"
-Px=432,936
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
-Text="IN4"
-Px=288,864
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
-Text="F4"
-Px=432,840
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
 Text="VC"
 Px=48,32
 GridSnap=True
@@ -2078,7 +1807,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1.3333333333333333
+Scale=1
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -2266,9 +1995,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=413,432
+SB 3=0,528
 Scale 3=1.3333333333333333
-Px=1370,791
+Px=289,731
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -2332,6 +2061,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
+SB 0=31,655
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -2451,6 +2181,629 @@ Text=.MODEL GENERAL SIN (F=12EG)
 Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
 Text=.MODEL 1N456 D (BV=30 CJO=4.505P IS=29.054P M=385.099M N=1.425 RL=125.018MEG
 Text=+ RS=910.713M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N456A D (BV=30 CJO=4.505P IS=29.054P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.713M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N457 D (BV=70 CJO=4.505P IS=19.191P M=385.099M N=1.388 RL=125.012MEG
+Text=+ RS=980.164M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N457A D (BV=70 CJO=4.505P IS=19.191P M=385.099M N=1.388 RL=125.018MEG
+Text=+ RS=980.164M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N458 D (BV=150 CJO=4.505P IS=29.055P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.706M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N458A D (BV=150 CJO=4.505P IS=29.056P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.702M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N459 D (BV=200 CJO=4.505P IS=29.058P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.692M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N459A D (BV=200 CJO=4.505P IS=29.058P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.692M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N461A D (BV=30 CJO=4.505P IS=29.057P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.697M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N462A D (BV=70 CJO=4.505P IS=29.058P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.692M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N463A D (BV=200 CJO=4.505P IS=29.058P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.69M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N482B D (BV=40 CJO=4.505P IS=29.058P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.692M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N483B D (BV=80 CJO=4.505P IS=29.056P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.7M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N484B D (BV=150 CJO=4.505P IS=29.057P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.697M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N485B D (BV=200 CJO=4.505P IS=29.058P M=385.099M N=1.425 RL=125.018MEG
+Text=+ RS=910.694M TT=5U VJ=700M)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MICROSEM.LBR
+Text=*** General Purpose Diode
+Text=.MODEL 1N486B D (BV=225 CJO=8p IS=99.9994p M=15.4944 N=999.941m RL=38.237G
+Text=+ RS=4.49438m TT=5u VJ=23.1916)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N625 D (BV=30 CJO=1.731P IS=4.78N M=816.138M N=1.776 RL=1.916G
+Text=+ RS=869.75M TT=1.443U VJ=15)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N626 D (BV=50 CJO=1.731P IS=4.78N M=816.138M N=1.776 RL=1.916G
+Text=+ RS=869.743M TT=1.443U VJ=15)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N627 D (BV=100 CJO=1.731P IS=4.78N M=816.138M N=1.776 RL=1.916G
+Text=+ RS=869.733M TT=1.443U VJ=15)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N628 D (BV=150 CJO=1.56P IS=3.843N M=300M N=1.961 RL=17.291G
+Text=+ RS=337.629M TT=1.443U VJ=4.653)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N629 D (BV=200 CJO=1.56P IS=3.843N M=300M N=1.961 RL=17.291G
+Text=+ RS=337.629M TT=1.443U VJ=4.653)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N658 D (BV=120 CJO=1.56P IS=3.843N M=300M N=1.961 RL=17.291G
+Text=+ RS=337.629M TT=432.809N VJ=4.653)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N659 D (BV=60 CJO=1.731P IS=4.78N M=816.138M N=1.776 RL=1.916G
+Text=+ RS=869.733M TT=432.809N VJ=15)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N660 D (BV=120 CJO=1.56P IS=3.843N M=300M N=1.961 RL=17.291G
+Text=+ RS=337.629M TT=432.809N VJ=4.653)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N661 D (BV=240 CJO=1.56P IS=3.843N M=300M N=1.961 RL=17.291G
+Text=+ RS=337.629M TT=432.809N VJ=4.653)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 3.3V 500mW Zener Diode
+Text=.MODEL 1N746 D (BV=3.3 CJO=304.407p IBV=20m IS=5.72393f M=495.751m RL=1G RS=28
+Text=+ VJ=749.998m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 3.6V 500mW Zener Diode
+Text=.MODEL 1N747 D (BV=3.6 CJO=273.85p IBV=20m IS=5.72393f M=495.248m RL=1G RS=24
+Text=+ VJ=750m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 3.9V 500mW Zener Diode
+Text=.MODEL 1N748 D (BV=3.9 CJO=228.005p IBV=20m IS=5.72393f M=494.189m RL=1G RS=23
+Text=+ VJ=749.985m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 4.3V 500mW Zener Diode
+Text=.MODEL 1N749 D (BV=4.3 CJO=182.771p IBV=20m IS=5.72393f M=496.57m RL=1G RS=22
+Text=+ VJ=749.998m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 4.7V 500mW Zener Diode
+Text=.MODEL 1N750 D (BV=4.7 CJO=159.081p IBV=20m IS=5.72393f M=490.331m RL=1G RS=19
+Text=+ VJ=750.016m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 5.1V 500mW Zener Diode
+Text=.MODEL 1N751 D (BV=5.1 CJO=152.236p IBV=20m IS=5.72393f M=495.997m RL=1G RS=17
+Text=+ VJ=749.995m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 5.6V 500mW Zener Diode
+Text=.MODEL 1N752 D (BV=5.6 CJO=149.624p IBV=20m IS=5.72393f M=499.419m RL=1G RS=11
+Text=+ VJ=750m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 6.2V 500mW Zener Diode
+Text=.MODEL 1N753 D (BV=6.2 CJO=137.866p IBV=20m IS=5.72393f M=503.351m RL=1G RS=7
+Text=+ VJ=750.042m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 6.8V 500mW Zener Diode
+Text=.MODEL 1N754 D (BV=6.8 CJO=130.412p IBV=20m IS=5.72393f M=505.166m RL=1G RS=5
+Text=+ VJ=749.951m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 7.5V 500mW Zener Diode
+Text=.MODEL 1N755 D (BV=7.5 CJO=109.523p IBV=20m IS=5.72393f M=495.069m RL=1G RS=6
+Text=+ VJ=750.004m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 8.2V 500mW Zener Diode
+Text=.MODEL 1N756 D (BV=8.2 CJO=102.957p IBV=20m IS=5.72393f M=489.572m RL=1G RS=8
+Text=+ VJ=750.021m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 9.1V 500mW Zener Diode
+Text=.MODEL 1N757 D (BV=9.1 CJO=78.3457p IBV=20m IS=5.72393f M=483.771m RL=1G RS=10
+Text=+ VJ=750.031m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 10V 500mW Zener Diode
+Text=.MODEL 1N758 D (BV=10 CJO=76.3501p IBV=20m IS=5.72393f M=499.614m RL=1G RS=17
+Text=+ VJ=750.043m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 12V 500mW Zener Diode
+Text=.MODEL 1N759 D (BV=12 CJO=91.4686p IBV=20m IS=5.72393f M=497.645m RL=1G RS=30
+Text=+ VJ=750.006m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N914 D (BV=100 CJO=1.584P IS=7N M=300M N=1.812 RL=3.896G RS=1.81
+Text=+ TT=11.542N VJ=12.628)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N914A D (BV=100 CJO=1.731P IS=4.78N M=816.138M N=1.776 RL=1.236G
+Text=+ RS=869.752M TT=11.542N VJ=15)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N914B D (BV=100 CJO=1.731P IS=4.78N M=816.138M N=1.776 RL=1.236G
+Text=+ RS=869.746M TT=11.542N VJ=15)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N916 D (BV=100 CJO=1.731P IS=4.78N M=816.138M N=1.776 RL=1.916G
+Text=+ RS=869.748M TT=8.953N VJ=15)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N916A D (BV=100 CJO=1.731P IS=4.78N M=816.138M N=1.776 RL=1.916G
+Text=+ RS=869.747M TT=8.953N VJ=15)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODE.LIB
+Text=.MODEL 1N916B D (BV=100 CJO=1.731P IS=4.78N M=816.138M N=1.776 RL=1.916G
+Text=+ RS=869.745M TT=8.953N VJ=15)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 6.8V 500mW Zener Diode
+Text=.MODEL 1N957A D (BV=6.8 CJO=123.457p IBV=18.5m IS=5.72393f M=512.127m RL=1G
+Text=+ RS=4.5 VJ=750.153m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 7.5V 500mW Zener Diode
+Text=.MODEL 1N958A D (BV=7.5 CJO=108.08p IBV=16.5m IS=5.72393f M=512.735m RL=1G
+Text=+ RS=5.5 VJ=750.154m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 8.2V 500mW Zener Diode
+Text=.MODEL 1N959A D (BV=8.2 CJO=100.22p IBV=15m IS=5.72393f M=511.086m RL=1G RS=6.5
+Text=+ VJ=750.17m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 9.1V 500mW Zener Diode
+Text=.MODEL 1N960A D (BV=9.1 CJO=95.2628p IBV=14m IS=5.72393f RL=1G RS=7.5 VJ=500m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 10V 500mW Zener Diode
+Text=.MODEL 1N961A D (BV=10 CJO=77.1666p IBV=12.5m IS=5.72393f M=512.221m RL=1G
+Text=+ RS=8.5 VJ=750.152m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 11V 500mW Zener Diode
+Text=.MODEL 1N962A D (BV=11 CJO=92.7457p IBV=11.5m IS=5.72393f M=514.076m RL=1G
+Text=+ RS=9.5 VJ=750.149m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 12V 500mW Zener Diode
+Text=.MODEL 1N963A D (BV=12 CJO=108.08p IBV=10.5m IS=5.72393f M=512.735m RL=1G
+Text=+ RS=11.5 VJ=750.154m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 13V 500mW Zener Diode
+Text=.MODEL 1N964A D (BV=13 CJO=84.9475p IBV=9.5m IS=5.72393f M=513.118m RL=1G RS=13
+Text=+ VJ=750.161m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 15V 500mW Zener Diode
+Text=.MODEL 1N965A D (BV=15 CJO=73.8519p IBV=8.5m IS=5.72393f M=508.58m RL=1G RS=16
+Text=+ VJ=750.149m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 16V 500mW Zener Diode
+Text=.MODEL 1N966A D (BV=16 CJO=66.3176p IBV=7.8m IS=5.72393f M=511.411m RL=1G RS=17
+Text=+ VJ=750.159m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 18V 500mW Zener Diode
+Text=.MODEL 1N967A D (BV=18 CJO=58.5041p IBV=7m IS=5.72393f M=509.35m RL=1G RS=21
+Text=+ VJ=750.155m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_SEMI.LIB
+Text=.MODEL 1N968 D (BV=19.915 CJO=477.40P IBV=6.2500M IS=1E-9 N=2 RS=13.647 TT=20N)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 20V 500mW Zener Diode
+Text=.MODEL 1N968A D (BV=20 CJO=58.8897p IBV=6.2m IS=5.72393f RL=1G RS=25 VJ=500m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 22V 500mW Zener Diode
+Text=.MODEL 1N969A D (BV=22 CJO=123.457p IBV=5.6m IS=5.72393f M=512.127m RL=1G RS=29
+Text=+ VJ=750.153m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 24V 500mW Zener Diode
+Text=.MODEL 1N970A D (BV=24 CJO=44.4762p IBV=5.2m IS=5.72393f M=504.766m RL=1G RS=33
+Text=+ VJ=750.076m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 27V 500mW Zener Diode
+Text=.MODEL 1N971A D (BV=27 CJO=41.5004p IBV=4.6m IS=5.72393f M=507.423m RL=1G RS=41
+Text=+ VJ=750.189m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 30V 500mW Zener Diode
+Text=.MODEL 1N972A D (BV=30 CJO=37.0857p IBV=4.2m IS=5.72393f M=513.684m RL=1G RS=49
+Text=+ VJ=750.171m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 33V 500mW Zener Diode
+Text=.MODEL 1N973A D (BV=33 CJO=123.457p IBV=3.8m IS=5.72393f M=512.127m RL=1G RS=58
+Text=+ VJ=750.153m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 36V 500mW Zener Diode
+Text=.MODEL 1N974A D (BV=36 CJO=32.0599p IBV=3.4m IS=5.72393f M=499.35m RL=1G RS=70
+Text=+ VJ=750.036m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 39V 500mW Zener Diode
+Text=.MODEL 1N975A D (BV=39 CJO=30.6255p IBV=3.2m IS=5.72393f M=502.974m RL=1G RS=80
+Text=+ VJ=750.181m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 43V 500mW Zener Diode
+Text=.MODEL 1N976A D (BV=43 CJO=29.3339p IBV=3m IS=5.72393f M=512.648m RL=1G RS=93
+Text=+ VJ=750.157m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 47V 500mW Zener Diode
+Text=.MODEL 1N977A D (BV=47 CJO=28.137p IBV=2.7m IS=5.72393f M=527.238m RL=1G RS=105
+Text=+ VJ=750.03m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 51V 500mW Zener Diode
+Text=.MODEL 1N978A D (BV=51 CJO=26.0986p IBV=2.5m IS=5.72393f M=506.01m RL=1G RS=125
+Text=+ VJ=750.191m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 56V 500mW Zener Diode
+Text=.MODEL 1N979A D (BV=56 CJO=25.016p IBV=2.2m IS=5.72393f M=527.486m RL=1G RS=150
+Text=+ VJ=750.03m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 62V 500mW Zener Diode
+Text=.MODEL 1N980A D (BV=62 CJO=23.2907p IBV=2m IS=5.72393f M=519.338m RL=1G RS=185
+Text=+ VJ=750.079m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 68V 500mW Zener Diode
+Text=.MODEL 1N981A D (BV=68 CJO=23.2907p IBV=1.8m IS=5.72393f M=519.338m RL=1G
+Text=+ RS=230 VJ=750.079m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 75V 500mW Zener Diode
+Text=.MODEL 1N982A D (BV=75 CJO=21.2813p IBV=1.7m IS=5.72393f M=494.298m RL=1G
+Text=+ RS=270 VJ=750.127m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 82V 500mW Zener Diode
+Text=.MODEL 1N983A D (BV=82 CJO=20.345p IBV=1.5m IS=5.72393f M=528.598m RL=1G RS=330
+Text=+ VJ=749.99m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 91V 500mW Zener Diode
+Text=.MODEL 1N984A D (BV=91 CJO=19.9192p IBV=1.4m IS=5.72393f M=503.715m RL=1G
+Text=+ RS=400 VJ=750.156m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 100V 500mW Zener Diode
+Text=.MODEL 1N985A D (BV=100 CJO=18.3824p IBV=1.3m IS=5.72393f M=503.422m RL=1G
+Text=+ RS=500 VJ=750.158m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 110V 500mW Zener Diode
+Text=.MODEL 1N986A D (BV=110 CJO=18.3824p IBV=1.1m IS=5.72393f M=503.422m RL=1G
+Text=+ RS=750 VJ=750.158m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 6.8V 1W Zener Diode
+Text=.MODEL 1N3016A D (BV=6.8 CJO=2.02683n IBV=37m IS=5.72393f M=504.468m RL=1G
+Text=+ RS=3.5 VJ=750.143m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 7.5V 1W Zener Diode
+Text=.MODEL 1N3017A D (BV=7.5 CJO=1.80139n IBV=34m IS=5.72393f M=504.396m RL=1G RS=4
+Text=+ VJ=750.17m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 8.2V 1W Zener Diode
+Text=.MODEL 1N3018A D (BV=8.2 CJO=18.3824p IBV=31m IS=5.72393f M=503.422m RL=1G
+Text=+ RS=4.5 VJ=750.158m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 9.1V 1W Zener Diode
+Text=.MODEL 1N3019A D (BV=9.1 CJO=1.5751n IBV=28m IS=5.72393f M=503.953m RL=1G RS=5
+Text=+ VJ=750.161m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 10V 1W Zener Diode
+Text=.MODEL 1N3020A D (BV=10 CJO=1.67661n IBV=25m IS=5.72393f M=504.546m RL=1G RS=7
+Text=+ VJ=750.168m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 11V 1W Zener Diode
+Text=.MODEL 1N3021A D (BV=11 CJO=1.51016n IBV=23m IS=5.72393f M=500.123m RL=1G RS=8
+Text=+ VJ=750.182m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 12V 1W Zener Diode
+Text=.MODEL 1N3022A D (BV=12 CJO=1.34924n IBV=21m IS=5.72393f M=503.562m RL=1G RS=9
+Text=+ VJ=750.159m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 13V 1W Zener Diode
+Text=.MODEL 1N3023A D (BV=13 CJO=1.29325n IBV=19m IS=5.72393f M=503.67m RL=1G RS=10
+Text=+ VJ=750.159m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 15V 1W Zener Diode
+Text=.MODEL 1N3024A D (BV=15 CJO=1.15593n IBV=17m IS=5.72393f M=504.745m RL=1G RS=14
+Text=+ VJ=750.158m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 16V 1W Zener Diode
+Text=.MODEL 1N3025A D (BV=16 CJO=1.26546n IBV=15.5m IS=5.72393f M=503.121m RL=1G
+Text=+ RS=16 VJ=750.161m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 18V 1W Zener Diode
+Text=.MODEL 1N3026A D (BV=18 CJO=1.21714n IBV=14m IS=5.72393f M=506.512m RL=1G RS=20
+Text=+ VJ=750.21m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 20V 1W Zener Diode
+Text=.MODEL 1N3027A D (BV=20 CJO=1.11803n IBV=12.5m IS=5.72393f RL=1G RS=22 VJ=500m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 22V 1W Zener Diode
+Text=.MODEL 1N3028A D (BV=22 CJO=1.01612n IBV=11.5m IS=5.72393f M=505.132m RL=1G
+Text=+ RS=23 VJ=750.178m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 24V 1W Zener Diode
+Text=.MODEL 1N3029A D (BV=24 CJO=896.312p IBV=10.5m IS=5.72393f M=501.369m RL=1G
+Text=+ RS=25 VJ=750.185m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 27V 1W Zener Diode
+Text=.MODEL 1N3030A D (BV=27 CJO=671.649p IBV=9.5m IS=5.72393f M=500.83m RL=1G RS=35
+Text=+ VJ=750.19m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 30V 1W Zener Diode
+Text=.MODEL 1N3031A D (BV=30 CJO=578.431p IBV=8.5m IS=5.72393f M=505.369m RL=1G
+Text=+ RS=40 VJ=750.164m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 33V 1W Zener Diode
+Text=.MODEL 1N3032A D (BV=33 CJO=691.859p IBV=7.5m IS=5.72393f M=505.204m RL=1G
+Text=+ RS=45 VJ=750.141m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 36V 1W Zener Diode
+Text=.MODEL 1N3033A D (BV=36 CJO=649.688p IBV=7m IS=5.72393f M=504.534m RL=1G RS=50
+Text=+ VJ=750.167m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 39V 1W Zener Diode
+Text=.MODEL 1N3034A D (BV=39 CJO=598.881p IBV=6.5m IS=5.72393f M=499.192m RL=1G
+Text=+ RS=60 VJ=750.156m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 43V 1W Zener Diode
+Text=.MODEL 1N3035A D (BV=43 CJO=507.179p IBV=6m IS=5.72393f M=504.186m RL=1G RS=70
+Text=+ VJ=750.164m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 47V 1W Zener Diode
+Text=.MODEL 1N3036A D (BV=47 CJO=450.41p IBV=5.5m IS=5.72393f M=504.473m RL=1G RS=80
+Text=+ VJ=750.145m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 51V 1W Zener Diode
+Text=.MODEL 1N3037A D (BV=51 CJO=384.807p IBV=5m IS=5.72393f M=503.74m RL=1G RS=95
+Text=+ VJ=750.158m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 56V 1W Zener Diode
+Text=.MODEL 1N3038A D (BV=56 CJO=380.362p IBV=4.5m IS=5.72393f M=504.152m RL=1G
+Text=+ RS=110 VJ=750.157m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 62V 1W Zener Diode
+Text=.MODEL 1N3039A D (BV=62 CJO=334.323p IBV=4m IS=5.72393f M=498.038m RL=1G RS=125
+Text=+ VJ=750.171m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 68V 1W Zener Diode
+Text=.MODEL 1N3040A D (BV=68 CJO=382.264p IBV=3.7m IS=5.72393f M=503.659m RL=1G
+Text=+ RS=150 VJ=750.154m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 75V 1W Zener Diode
+Text=.MODEL 1N3041A D (BV=75 CJO=363.77p IBV=3.3m IS=5.72393f M=503.499m RL=1G
+Text=+ RS=175 VJ=750.157m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 82V 1W Zener Diode
+Text=.MODEL 1N3042A D (BV=82 CJO=323.765p IBV=3m IS=5.72393f M=503.106m RL=1G RS=200
+Text=+ VJ=750.157m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 91V 1W Zener Diode
+Text=.MODEL 1N3043A D (BV=91 CJO=223.822p IBV=2.8m IS=5.72393f M=500.66m RL=1G
+Text=+ RS=250 VJ=750.186m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 100V 1W Zener Diode
+Text=.MODEL 1N3044A D (BV=100 CJO=228.715p IBV=2.5m IS=5.72393f M=505.346m RL=1G
+Text=+ RS=350 VJ=750.2m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 110V 1W Zener Diode
+Text=.MODEL 1N3045A D (BV=110 CJO=268.241p IBV=2.3m IS=5.72393f M=504.582m RL=1G
+Text=+ RS=450 VJ=750.166m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 120V 1W Zener Diode
+Text=.MODEL 1N3046A D (BV=120 CJO=202.482p IBV=2m IS=5.72393f M=503.141m RL=1G
+Text=+ RS=550 VJ=750.155m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\MZENER.LBR
+Text=*** 130V 1W Zener Diode
+Text=.MODEL 1N3047A D (BV=130 CJO=172.539p IBV=1.9m IS=5.72393f M=500.964m RL=1G
+Text=+ RS=700 VJ=750.166m)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_SEMI.LIB
+Text=.MODEL 1N3595 D (BV=150 CJO=3.823E-12 EG=1.110 FC=0.5 IBV=1.0E-04 IS=3.875E-10
+Text=+ ISR=2.112E-10 M=0.2684 N=1.776 NR=2.044 RS=0.1445 VJ=0.3905 XTI=3.0)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_RECT.LIB
+Text=.MODEL 1N4933RL D (BV=50 CJO=2.63241E-11 EG=1.3 FC=0.5 IBV=1E-06 IS=2.86853E-08
+Text=+ M=0.337959 N=2 RS=0.0819148 TT=1.94764E-07 VJ=0.4 XTI=4)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_RECT.LIB
+Text=.MODEL 1N4934RL D (BV=100 CJO=2.63241E-11 EG=1.3 FC=0.5 IBV=1E-06
+Text=+ IS=2.86853E-08 M=0.337959 N=2 RS=0.0819148 TT=1.94764E-07 VJ=0.4 XTI=4)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_RECT.LIB
+Text=.MODEL 1N4935RL D (BV=200 CJO=2.63241E-11 EG=1.3 FC=0.5 IBV=1E-06
+Text=+ IS=2.86853E-08 M=0.337959 N=2 RS=0.0819148 TT=1.94764E-07 VJ=0.4 XTI=4)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_RECT.LIB
+Text=.MODEL 1N4936RL D (BV=400 CJO=2.63241E-11 EG=1.3 FC=0.5 IBV=1E-06
+Text=+ IS=2.86853E-08 M=0.337959 N=2 RS=0.0819148 TT=1.94764E-07 VJ=0.4 XTI=4)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_RECT.LIB
+Text=.MODEL 1N4937RL D (BV=600 CJO=2.63241E-11 EG=1.3 FC=0.5 IBV=1E-06
+Text=+ IS=2.86853E-08 M=0.337959 N=2 RS=0.0819148 TT=1.94764E-07 VJ=0.4 XTI=4)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\VISHAYDIODE.LIB
+Text=.MODEL 1N5062 D (BV=1.1491E3 CJO=40.579E-12 IBV=2.5864E-3 IKF=58.060
+Text=+ IS=3.3350E-9 ISR=2.9194E-9 M=.35794 N=1.7455 NR=4.9950 RS=34.757E-3
+Text=+ TT=2.4576E-6 VJ=.42029)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\VMI_DIODES.LIB
+Text=.MODEL 1N6615 D (BV=1.1000E3 CJO=38.420E-12 IBV=100.00E-6 IS=5.00E-7
+Text=+ ISR=100.00E-12 N=3.4000 RS=.11 TT=70.000E-9 VJ=.3905)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ROHM_DIODE.LIB
+Text=.MODEL 1SR139-400 D (BV=500 CJO=24.567E-12 IKF=10.674 IS=583.73E-12
+Text=+ ISR=2.3615E-9 M=.33075 N=1.6197 NR=3 RS=41.918E-3 TT=4.1000E-6 VJ=.42888)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ROHM_DIODE.LIB
+Text=.MODEL 1SR139-600 D (BV=750 CJO=18.459E-12 IKF=8.4525 IS=735.79E-12
+Text=+ ISR=100.53E-12 M=.37966 N=1.6491 NR=3.5000 RS=33.514E-3 TT=4.8000E-6 VJ=.4742)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ROHM_DIODE.LIB
+Text=.MODEL 1SR154-400 D (BV=500 CJO=23.729E-12 IKF=4.0010 IS=534.77E-12
+Text=+ ISR=2.4181E-9 M=.31942 N=1.6239 NR=2.5000 RS=50.532E-3 TT=4.1000E-6 VJ=.41083)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ROHM_DIODE.LIB
+Text=.MODEL 1SR154-600 D (BV=750 CJO=17.770E-12 IKF=7.0701 IS=1.1191E-9
+Text=+ ISR=1.6686E-9 M=.36215 N=1.6862 NR=2.5000 RS=57.049E-3 TT=4.8000E-6 VJ=.43005)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ROHM_DIODE.LIB
+Text=.MODEL 1SR156-400 D (BV=500 CJO=33.986E-12 IKF=51.357E-3 IS=72.169E-9
+Text=+ ISR=512.43E-15 M=.51481 N=2.0427 RS=75.306E-3 TT=245.00E-9 VJ=.47751)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 6CWQ10FN D (BV=100 CJO=2.9028E-10 EG=0.6 FC=0.5 IBV=0.001 IS=1.92816E-06
+Text=+ M=0.453836 N=2 RS=0.0227346 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 8ETH06 D (BV=600 CJO=1.56732E-10 EG=1.3 FC=0.5 IBV=0.0001 IS=6.92843E-10
+Text=+ M=0.404011 N=2 RS=0.121017 TT=1E-09 VJ=0.4 XTI=0.528448)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 10MQ100N D (BV=100 CJO=8.62759E-11 EG=0.6 FC=0.5 IBV=0.00025 IS=1E-07
+Text=+ M=0.43322 N=1.65612 RS=0.0807081 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\VISHAYDIODE.LIB
+Text=.MODEL 10MQ100NPBF D (BV=103.90 CJO=93.409E-12 EG=1.1400 IBV=248.70E-6
+Text=+ IKF=.62128 IS=1.0022E-6 ISR=10.010E-21 M=.44859 N=1.9566 NR=4.9950
+Text=+ RS=52.583E-3 VJ=.3905 XTI=2)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 10YQ045 D (BV=45 CJO=2.43731E-09 EG=1.3 FC=0.5 IBV=0.0001 IS=3.16878E-08
+Text=+ M=0.461242 N=0.856687 RS=0.0291233 TT=1E-09 VJ=0.4 XTI=3.32001)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 10YQ045C D (BV=45 CJO=2.43731E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=3.16878E-08 M=0.461242 N=0.856687 RS=0.0291233 TT=1E-09 VJ=0.4 XTI=3.32001)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 12CWQ04FN D (BV=40 CJO=1.51803E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=1.05439E-06 M=0.516518 N=1.07052 RS=0.0173547 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 15CLQ100_IR D (BV=100 CJO=1.38463E-09 EG=0.996757 FC=0.5 IBV=0.005
+Text=+ IS=6.44968E-05 M=0.466344 N=2 RS=0.014091 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 15LJQ100 D (BV=100 CJO=1.08848E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=6.15446E-05 M=0.371667 N=1.88088 RS=0.0153982 TT=1E-09 VJ=0.4 XTI=3.60437)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 16CYQ100C D (BV=100 CJO=1.46348E-09 EG=0.633979 FC=0.5 IBV=0.0001
+Text=+ IS=0.000161396 M=0.48911 N=2 RS=0.0226082 TT=1E-09 VJ=0.4 XTI=0.500876)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 16CYQ150C D (BV=150 CJO=9.98822E-10 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=1.71508E-05 M=0.484035 N=2 RS=0.0265393 TT=1E-09 VJ=0.4 XTI=2.78486)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 16SYQ060C D (BV=60 CJO=6.83071E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=1.66638E-08 M=0.497741 N=0.65508 RS=0.0183025 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 16YQ150C D (BV=150 CJO=1.74923E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=2.63267E-05 M=0.470085 N=2 RS=0.0169253 TT=1E-09 VJ=0.4 XTI=2.95537)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 20CJQ030_IR D (BV=30 CJO=2.9346E-10 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=7.45927E-09 M=0.427299 N=0.89875 RS=0.0632601 VJ=0.4 XTI=4)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 20CLQ045_IR D (BV=45 CJO=2.42073E-09 EG=0.6 FC=0.5 IBV=0.005
+Text=+ IS=5.55194E-10 M=0.477502 N=0.736126 RS=0.01 VJ=0.470122 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 22GQ100 D (BV=100 CJO=4.67713E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=5.91885E-14 M=0.513011 N=0.527335 RS=0.0197462 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 30CLJQ045 D (BV=45 CJO=1.24067E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=6.17168E-07 M=0.481835 N=1.08809 RS=0.0202821 VJ=0.408846 XTI=3.29182)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 30CLJQ100 D (BV=100 CJO=6.65975E-10 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=1.0712E-05 M=0.486443 N=2 RS=0.0180689 TT=1E-09 VJ=0.4 XTI=3.97509)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 30CLJQ150 D (BV=150 CJO=3.73861E-10 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=1.30646E-06 M=0.457852 N=2 RS=0.0239928 VJ=0.4 XTI=3.05712)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 30CTH02 D (BV=200 CJO=4.06302E-10 EG=1.3 FC=0.5 IBV=0.0001 IS=1E-15
+Text=+ M=0.3385 N=0.77819 RS=0.01 TT=1E-07 VJ=0.4 XTI=4)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 30LJQ100 D (BV=100 CJO=1.41531E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=2.8036E-05 M=0.47998 N=2 RS=0.0100392 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 30LJQ150 D (BV=150 CJO=9.09704E-10 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=4.79361E-06 M=0.462283 N=2 RS=0.0108545 VJ=0.4 XTI=0.502388)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 30SCLJQ030 D (BV=30 CJO=1.61571E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=3.04923E-06 M=0.472758 N=1.0506 RS=0.0123656 VJ=0.442068 XTI=2.9944)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 30SCLJQ060 D (BV=60 CJO=1.97725E-09 EG=1.27986 FC=0.5 IBV=0.0001
+Text=+ IS=0.000991251 M=0.495205 N=2 RS=0.0235686 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 30SLJQ030 D (BV=30 CJO=5.85622E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=2.08649E-07 M=0.485403 N=0.86202 RS=0.00676047 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 35CGQ045 D (BV=45 CJO=4.10878E-09 EG=0.6 FC=0.5 IBV=0.0001 IS=1.1674E-09
+Text=+ M=0.488972 N=0.7478 RS=0.0126157 TT=1E-09 VJ=0.412412 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 35CGQ150 D (BV=150 CJO=1.77402E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=2.96954E-05 M=0.45417 N=2 RS=0.0127363 TT=1E-09 VJ=0.4 XTI=0.50111)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 35GQ100 D (BV=100 CJO=4.45245E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=4.70367E-07 M=0.486177 N=1.08251 RS=0.01531 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 35GQ150 D (BV=150 CJO=3.54124E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=5.69719E-06 M=0.47187 N=1.77348 RS=0.00811439 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 35SCGQ030 D (BV=30 CJO=7.98541E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=1.64546E-07 M=0.48083 N=0.757484 RS=0.0125303 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 35SCGQ060 D (BV=60 CJO=4.39335E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=4.80755E-07 M=0.476213 N=0.839245 RS=0.0133502 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 35SGQ060 D (BV=60 CJO=6.66699E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=1.83573E-06 M=0.495788 N=0.889257 RS=0.0126962 TT=1E-09 VJ=0.415868
+Text=+ XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 40CTQ045 D (BV=45 CJO=1.51919E-08 EG=1.04653 FC=0.5 IBV=0.00025
+Text=+ IS=3.357E-08 M=0.704417 N=0.5 RS=0.01 TT=1E-09 VJ=0.4 XTI=0.957426)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 60LQ045 D (BV=45 CJO=6.87655E-09 EG=0.6 FC=0.5 IBV=0.0001 IS=1E-07
+Text=+ M=0.408789 N=0.914851 RS=0.00252226 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 60LQ100 D (BV=100 CJO=4.12278E-09 EG=0.6 FC=0.5 IBV=0.0001 IS=0.001
+Text=+ M=0.477205 N=1.79037 RS=0.0026041 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 75LQ150 D (BV=150 CJO=3.61923E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=6.47147E-05 M=0.479638 N=2 RS=0.00457083 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 75SLQ030 D (BV=30 CJO=1.14291E-08 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=1.05375E-05 M=0.46991 N=0.994404 RS=0.00235787 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 75SLQ045 D (BV=45 CJO=8.60449E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=4.99828E-06 M=0.492059 N=0.94644 RS=0.00311306 TT=1E-09 VJ=0.42409 XTI=4)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 75SLQ060 D (BV=60 CJO=6.62134E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=0.000362639 M=0.487838 N=1.51431 RS=0.00439051 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 80CLQ150 D (BV=150 CJO=1.45286E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=3.00965E-05 M=0.415374 N=2 RS=0.00595685 VJ=0.4 XTI=3.40773)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 80EBU02 D (BV=200 CJO=1.77691E-09 EG=0.1 FC=0.5 IBV=5E-05 IS=6.10239E-06
+Text=+ M=0.495417 N=2 RS=0.00151476 TT=1E-09 VJ=0.4 XTI=0.0005)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 80SCLQ030 D (BV=30 CJO=8.63344E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=1.37055E-05 M=0.494172 N=1.05588 RS=0.0037829 TT=1E-09 VJ=0.406397 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 80SCLQ060 D (BV=60 CJO=4.50054E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=2.49622E-07 M=0.478651 N=0.882834 RS=0.00629606 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_DIODE.LIB
+Text=.MODEL 80SQ045NRL D (BV=45 CJO=1.33157E-09 EG=0.6 FC=0.5 IBV=0.001
+Text=+ IS=1.12605E-10 M=0.495253 N=0.5 RS=0.0271341 VJ=0.47249 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 90CLQ100 D (BV=100 CJO=3.07785E-09 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=0.00032603 M=0.479989 N=2 RS=0.00931445 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 120LQ045 D (BV=45 CJO=1.29866E-08 EG=1.3 FC=0.5 IBV=0.0001
+Text=+ IS=5.90313E-09 M=0.473356 N=0.737625 RS=0.00455345 TT=1E-09 VJ=0.462963
+Text=+ XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\IRF.LIB
+Text=.MODEL 120LQ100 D (BV=100 CJO=6.48813E-09 EG=0.6 FC=0.5 IBV=0.0001
+Text=+ IS=0.000544678 M=0.384061 N=1.83305 RS=0.00277937 TT=1E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\M_RFDEV.LIB
+Text=.MODEL A931BCEX D (CJO=2.6E-14 IS=2.865E-20 M=0.18 TT=2E-11 VJ=0.25)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\DIODESINC.LIB
+Text=.MODEL B540C D (BV=50 CJO=8.98694E-10 EG=0.750278 FC=0.5 IBV=0.0001
+Text=+ IS=1.5672E-06 N=1.01362 RS=0.0209949 TRS1=0.00406277 TRS2=2.17553E-07
+Text=+ VJ=0.396195 XTI=0.000352915)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\INFINEON.LIB
+Text=.MODEL BA582 D (BV=70 CJO=1.17P IBV=.1N IS=185F M=.096 N=1.305 RS=.30 TT=125N
+Text=+ VJ=.12)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_SEMI.LIB
+Text=.MODEL BAR43 D (BV=33 CJO=1.485E-11 EG=0.72 FC=0.5 IBV=1E-04 IS=7.056E-9
+Text=+ ISR=2.8E-7 M=0.45 N=1.0 NR=2.0 RS=0.9228 TBV1=1E-5 TRS1=6.1E-3 TRS2=1E-5
+Text=+ TT=5.02E-09 VJ=0.48 XTI=3.0)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\PH_DIODE.LIB
+Text=.MODEL BAS16L D (BV=113.60 CJO=5.641E-013 IBV=10 IKF=37.638E-3 IS=6.0289E-9
+Text=+ ISR=2.0646E-9 M=0.05188 N=2.1283 NR=4.9950 RS=1.0000E-3 TT=4.5000E-9
+Text=+ VJ=0.01571)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_DIODE.LIB
+Text=.MODEL BAS16M3T5G D (BV=130 CJO=6.15159E-13 EG=1.16613 FC=0.5 IBV=0.00025
+Text=+ IS=5.28666E-09 M=0.0507019 N=1.88814 RS=1.28819 TT=2.59685E-09 VJ=0.4 XTI=0.5)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_SEMI.LIB
+Text=.MODEL BAS40SL D (BV=40.4 CJO=3.98E-12 EG=0.61 FC=0.5 IBV=1.0E-4 IKF=2.8287E-4
+Text=+ IS=6.2213E-9 ISR=9.5E-10 M=0.215 N=1.0 RS=5.58230 TT=9.8835E-9 VJ=0.48)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\PH_DIODE.LIB
+Text=.MODEL BAS45A D (BV=225.36 CJO=2.9332E-12 IBV=10 IKF=22.121 IS=7.0000E-9
+Text=+ ISR=10.010E-21 M=.24677 N=2.2707 NR=4.9950 RS=1.0000E-3 TT=1.7500E-6 VJ=.3905)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_DIODE.LIB
+Text=.MODEL BAS70-04LT1G D (BV=70 CJO=1.48289E-12 EG=0.725098 FC=0.5 IBV=1E-05
+Text=+ IS=5.62085E-08 M=0.372039 N=1.47436 RS=23.3853 TT=6.49213E-09 VJ=0.4
+Text=+ XTI=5E-09)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\ON_DIODE.LIB
+Text=.MODEL BAS116TT1G D (BV=130 CJO=1.03375E-12 EG=1.12855 FC=0.5 IBV=0.00025
+Text=+ IS=1.189E-12 M=0.2 N=1.41585 RS=0.287713 TT=3.72648E-07 VJ=0.4 XTI=4)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\INFINEON.LIB
+Text=.MODEL BAS125 D (BV=25 CJO=.95P EG=.68 FC=.5 IBV=100N IS=1.45N M=.2 N=1.03
+Text=+ RS=12 TT=25P VJ=.24 XTI=1.6)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\INFINEON.LIB
+Text=.MODEL BAT14-098 D (BV=4 CJO=270F EG=.68 FC=.5 IBV=5U IS=77P M=.078 N=1.027
+Text=+ RS=4 TT=25P VJ=.25 XTI=1.8)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\INFINEON.LIB
+Text=.MODEL BAT15-03W D (BV=4 CJO=260F EG=.68 FC=.5 IBV=10U IS=130N M=.047 N=1.08
+Text=+ RS=4.5 TT=25P VJ=.11 XTI=1.8)
+Text=*** From file C:\Users\Admin\Documents\microcap\library\INFINEON.LIB
+Text=.MODEL BAT15-04 D (BV=4 CJO=260F EG=.68 FC=.5 IBV=10U IS=130N M=.047 N=1.08
+Text=+ RS=4.5 TT=25P VJ=.11 XTI=1.8)
 
 [InfoPage]
 InfoPage=True
@@ -2534,7 +2887,7 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
-MonMaxShow=12
+MonMaxShow=10
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
@@ -2909,6 +3262,10 @@ ALIGNTOP=No
 ALIGNMIDDLES=No
 ALIGNBOTTOM=No
 
+[APage]
+Analysis=AC
+Name="MAIN"
+
 [Monte Carlo Options]
 Analysis=Transient
 Status=Off
@@ -3093,56 +3450,6 @@ NOFmtY=3E
 
 [WaveForm]
 Analysis=Transient
-Plt=4
-AliasID=7
-XExp=T
-YExp=v(f4)
-XRng=AutoAlways
-YRng=9,-6
-Options=LINEARX,LINEARY
-Range Grid Y=3
-Enable=Enable
-Line Color=#FF0000
-Text Color=#FF0000
-Rainbow=False
-VFmtX=3
-VFmtY=3
-ScaleFactorX="None"
-ScaleFactorY="None"
-ScaleUnitsX="Auto"
-ScaleUnitsY="Auto"
-SFmtX=2
-SFmtY=2
-NOFmtX=3E
-NOFmtY=3E
-
-[WaveForm]
-Analysis=Transient
-Plt=4
-AliasID=8
-XExp=T
-YExp=v(in4)
-XRng=AutoAlways
-YRng=9,-6
-Options=LINEARX,LINEARY
-Range Grid Y=3
-Enable=Enable
-Line Color=#008000
-Text Color=#008000
-Rainbow=False
-VFmtX=3
-VFmtY=3
-ScaleFactorX="None"
-ScaleFactorY="None"
-ScaleUnitsX="Auto"
-ScaleUnitsY="Auto"
-SFmtX=2
-SFmtY=2
-NOFmtX=3E
-NOFmtY=3E
-
-[WaveForm]
-Analysis=Transient
 Plt=5
 AliasID=9
 XExp=T
@@ -3198,9 +3505,9 @@ AliasID=11
 XExp=T
 YExp=v(ff3)
 XRng=AutoAlways
-YRng=0.3,-0.2
+YRng=0.36,-0.24
 Options=LINEARX,LINEARY
-Range Grid Y=0.1
+Range Grid Y=0.12
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -3223,9 +3530,9 @@ AliasID=12
 XExp=T
 YExp=v(ff5)
 XRng=AutoAlways
-YRng=0.075,-0.05
+YRng=0.06,-0.04
 Options=LINEARX,LINEARY
-Range Grid Y=0.025
+Range Grid Y=0.02
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
@@ -3265,9 +3572,11 @@ Plt=1
 AliasID=1
 XExp=F
 YExp=dB(v(SIN))
-XRng=Auto
-YRng=Auto
+XRng=1e+8,1e+6
+YRng=15,2.5
 Options=LINEARY
+Range Grid X=1.98e+7
+Range Grid Y=2.5
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -3289,9 +3598,11 @@ Plt=2
 AliasID=2
 XExp=F
 YExp=ph(v(SIN))
-XRng=Auto
-YRng=Auto
+XRng=1e+8,1e+6
+YRng=1,-1
 Options=LINEARY
+Range Grid X=1.98e+7
+Range Grid Y=0.5
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
@@ -3342,6 +3653,7 @@ CurrentPage 0="MAIN"
 
 [Pane]
 Analysis=AC
+CurrentPage 0="MAIN"
 
 [Pane]
 Analysis=DC
