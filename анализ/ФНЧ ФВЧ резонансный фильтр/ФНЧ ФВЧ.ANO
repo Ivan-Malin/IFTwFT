@@ -2,13 +2,13 @@
 ***                       Micro-Cap 12.2.0.5 (64 bit)                        ***
 ***                                                                          ***
 ***                                                                          ***
-***                         AC Analysis of LC-ôèëüòð                         ***
-***                           13.12.2023 15:16:40                            ***
+***                          AC Analysis of ÔÍ× ÔÂ×                          ***
+***                           13.12.2023 15:13:07                            ***
 ********************************************************************************
 Limits
 ======
-Frequency Range          Log 1E8,1
-Number of Points         1001
+Frequency Range          Log 1E9,1
+Number of Points         10000
 Temperature              Linear 27
 Maximum Change %         5
 Noise Input              NONE
@@ -30,14 +30,9 @@ Temperature=27
 DC Operating Point Voltages
 ===========================
 Node         Voltage  Node         Voltage  Node         Voltage 
-1             0.000   FG1           3.274m  FF1           0.000  
-VC           15.000   VE          -15.000   6            -1.382  
-7             1.388  
-
-DC Operating Point Inductor Current
-===================================
-Inductor     Current 
-L1            3.274n 
+1             0.000   VC           15.000   VE          -15.000  
+FG1           3.274m  5            -1.382   6             1.388  
+FL            3.274m  FF1           0.000  
 
 
 Operating Point for Devices of Type Diode
@@ -120,10 +115,10 @@ GM                   2.900m         2.875m
 
 Current Terms:
 IB                  30.275p        27.029p
-IC                  75.002u        74.367u
+IC                  75.002u        74.368u
 
 Resistance Terms:
-RPI              821.062MEG     915.234MEG
+RPI              821.063MEG     915.233MEG
 RX                   0.000          0.000 
 RO                   1.000T         1.000T
 
@@ -133,7 +128,7 @@ VBC                 -1.226         -1.230
 VCE                  1.933          1.935 
 
 Frequency Terms:
-FT               46152.443T     45761.942T
+FT               46152.385T     45762.000T
 
 Power DC Terms:
 PD                 144.980u       143.938u
@@ -141,7 +136,7 @@ PS                   0.000          0.000
 
 DC Pin Currents:
 Ib                  30.275p        27.029p
-Ic                  75.002u        74.367u
+Ic                  75.002u        74.368u
 Ie                 -75.002u       -74.368u
 Is                   0.000          0.000 
 
@@ -157,65 +152,50 @@ vce                  0.000          0.000
 
 Operating Point for Devices of Type Resistor
 ============================================
-Instance:                R17        X10.Rc1        X10.Rc2        X10.Re1
-V                     3.274m       159.159m       157.813m       133.294m
+Instance:            X10.Rc1        X10.Rc2        X10.Re1        X10.Re2
+V                   159.159m       157.813m       133.294m       132.167m
 Power DC Terms:
-PD                   10.719p        11.937u        11.736u         9.997u
+PD                   11.937u        11.736u         9.997u         9.829u
 
 DC Pin Currents:
-Ir                    3.274n        75.002u        74.367u        75.002u
+Ir                   75.002u        74.368u        75.002u        74.368u
 
 Device Variables:
 tc1                   0.000          0.000          0.000          0.000 
 tc2                   0.000          0.000          0.000          0.000 
 
 
-Instance:            X10.Re2         X10.Re         X10.Rp         X10.R2
-V                   132.167m      -840.547m         2.770         63.066m
+Instance:             X10.Re         X10.Rp         X10.R2        X10.Ro2
+V                  -840.547m         2.770         63.047m       -69.840u
 Power DC Terms:
-PD                    9.829u       529.889n       174.753u        39.773n
+PD                  529.889n       174.753u        39.749n       195.107p
 
 DC Pin Currents:
-Ir                   74.368u      -630.410n        63.091u       630.656n
+Ir                 -630.410n        63.091u       630.468n        -2.794u
 
 Device Variables:
 tc1                   0.000          0.000          0.000          0.000 
 tc2                   0.000          0.000          0.000          0.000 
 
 
-Instance:            X10.Ro2     X10.ROUTAC
-V                   -69.677u       -31.358u
+Instance:         X10.ROUTAC            R18            R19
+V                   -31.522u         0.000          0.000 
 Power DC Terms:
-PD                  194.194p        19.667p
+PD                   19.873p         0.000          0.000 
 
 DC Pin Currents:
-Ir                   -2.787u      -627.163n
+Ir                 -630.437n         0.000          0.000 
 
 Device Variables:
-tc1                   0.000          0.000 
-tc2                   0.000          0.000 
-
-
-
-Operating Point for Devices of Type Inductor
-============================================
-Instance:                 L1
-V                     0.000 
-Power DC Terms:
-PS                    0.000 
-
-DC Pin Currents:
-Il                    3.274n
-
-Device Variables:
-ic                    0.000 
+tc1                   0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000 
 
 
 
 Operating Point for Devices of Type Capacitor
 =============================================
-Instance:                 C1         X10.C1         X10.Ce         X10.C3
-V                     0.000          1.347m       840.547m       -59.823m
+Instance:             X10.C1         X10.Ce         X10.C3             C1
+V                     1.346m       840.547m       -59.805m         3.274m
 Power DC Terms:
 PS                    0.000          0.000          0.000          0.000 
 
@@ -224,6 +204,18 @@ Ic                    0.000          0.000          0.000          0.000
 
 Device Variables:
 ic                    0.000          0.000          0.000          0.000 
+
+
+Instance:                 C2
+V                    -3.274m
+Power DC Terms:
+PS                    0.000 
+
+DC Pin Currents:
+Ic                    0.000 
+
+Device Variables:
+ic                    0.000 
 
 
 
@@ -239,21 +231,21 @@ State                   SAT
 Operating Point for Devices of Type SPICE Poly
 ==============================================
 Instance:            X10.I3         X10.V2         X10.V1         X10.I1
-V                  -69.677u         3.312m      -627.163u       -63.066m
+V                  -69.840u         3.312m      -630.437u       -63.047m
 Power DC Terms:
-PG                 237.893p        10.750p         0.001f      -248.817p
+PG                 239.137p       -88.860f         0.001f      -248.743p
 
 DC Pin Currents:
-ISource              3.414u        -3.246n         1.254f        -3.945n
+ISource              3.424u        26.830p         1.261f        -3.945n
 
 
 Instance:            X10.I2
-V                   63.066m
+V                   63.047m
 Power DC Terms:
-PG                  40.022n
+PG                  39.998n
 
 DC Pin Currents:
-ISource           -634.602n
+ISource           -634.413n
 
 
 
@@ -283,6 +275,6 @@ Power DC Terms:
 PG                 400.187p         0.000 
 
 DC Pin Currents:
-ISource            -20.009p      -627.163n
+ISource            -20.009p      -630.437n
 
 
